@@ -126,7 +126,7 @@ $(document).ready(function() {
         renderCal();
       },
       error: function(xhr, status, error) {
-        alert("Error: " + status);
+        <!-- alert("Error: " + status);
       }
     });
   });

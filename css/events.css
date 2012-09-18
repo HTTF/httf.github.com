@@ -1,7 +1,7 @@
 #calendar {
   left: 25%;
   position: absolute; 
-  top: 10%;
+  top: 15%;
   width: 50%;
 }
 #calendar ul {
@@ -15,8 +15,9 @@
 #calendar .event_title {
   width: 100%;
   float: right;
-  <!--padding-bottom: 0.3em;
-  border-bottom: 1px solid #000000;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px dotted #A4A4A4;
 }
 #calendar .event_meta {
   width: 24%;
@@ -25,5 +26,7 @@
 #calendar .event_content {
   width: 75%;
   float: left;
-  border-right: 1px solid #000000;
+  border-right: 1px dotted #A4A4A4;
+  padding-bottom: 3em;
+  padding-right: 0.3em;
 }
