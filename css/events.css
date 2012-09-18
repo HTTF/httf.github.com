@@ -1,0 +1,29 @@
+#calendar {
+  left: 25%;
+  position: absolute; 
+  top: 10%;
+  width: 50%;
+}
+#calendar ul {
+  list-style: none outside none;
+  padding: 0em;
+}
+#calendar li {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+#calendar .event_title {
+  width: 100%;
+  float: right;
+  <!--padding-bottom: 0.3em;
+  border-bottom: 1px solid #000000;
+}
+#calendar .event_meta {
+  width: 24%;
+  float: right;
+}
+#calendar .event_content {
+  width: 75%;
+  float: left;
+  border-right: 1px solid #000000;
+}

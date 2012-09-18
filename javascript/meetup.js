@@ -73,7 +73,7 @@ function renderCal() {
     text += '<div class="event_content">';
     text += '  <ul class="event_list">';
     if (val.venue!=undefined){
-      var addr = formatAddress(val.venue.address_1, val.venue.address_2, val.venue.address_3, val.venue.city, val.venue.state);
+      var addr = formatAddress(val.venue.address_1, val.venue.city, val.venue.state);
       text += '    <li class="group_name">';
       text += '      <a href="' + val.event_url + '">' + val.venue.name +'</a>';
       text += '    </li>';
