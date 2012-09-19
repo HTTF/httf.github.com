@@ -1,3 +1,32 @@
+/* ------------------------------
+  HEADER
+------------------------------ */
+header {
+}
+header h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+header li {
+  display: inline;
+  margin: 0 5px;
+  list-style-type: none;
+}
+nav {
+  text-align: center;
+}
+.top-bar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.top-bar ul {
+  display: inline-block;
+}
+
+/* ------------------------------
+  EVENTS
+------------------------------ */
 #calendar {
   left: 25%;
   position: absolute; 
