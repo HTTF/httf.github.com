@@ -2,10 +2,14 @@ var events = [];
 
 function getHourOfDay(datetime){
   hr = datetime.getHours(); 
-  if (hr<12) {
+  if (hr==0) {
+    return [12,"AM"];
+  } else if (hr<12) {
     return [hr,"AM"];
-  } else if (hr>=12){
+  } else if (hr>12){
     return [hr-12,"PM"];
+  } else {
+    return [hr,"PM"];
   }
 }
 function getMinOfHour(datetime){
@@ -65,7 +69,7 @@ function renderCal() {
     if (val.fee!=undefined){
       text += '    <li class="fee">';
       text += '      <span>Price:</span><br>';
-      text += '      <span>'+val.fee.amount+'</span>';
+      text += '      <span>$'+val.fee.amount+'</span>';
       text += '    </li>'
     }
     text += '  </ul>';
