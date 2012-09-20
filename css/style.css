@@ -23,7 +23,6 @@ nav {
 .top-bar ul {
   display: inline-block;
 }
-
 /* ------------------------------
   EVENTS
 ------------------------------ */
@@ -58,4 +57,18 @@ nav {
   border-right: 1px dotted #A4A4A4;
   padding-bottom: 3em;
   padding-right: 0.3em;
+}
+/* -----------------------
+   Groups
+   ---------------------- */
+#groups {
+  left: 25%;
+  position: absolute; 
+  top: 30%;
+  width: 50%;
+}
+#groups img {
+  height: 150px;
+  float: left;
+  padding: 0.3em;
 }
