@@ -1,16 +1,37 @@
 /* ------------------------------
+  GLOBAL
+------------------------------ */
+body {
+  background-image: url("../images/striped_lens.png");
+}
+.httf-color {
+  color: #4BDFFF;
+}
+.button {
+  /*background: #4BDFFF;*/
+  background: #fff;
+}
+.top-bar {
+  background: #ccc;
+}
+
+/* ------------------------------
   HEADER
 ------------------------------ */
-header {
-}
 header h1 {
   text-align: center;
   margin-top: 100px;
+  font-family: 'Rokkitt', serif;
+  font-size: 5em;
 }
 header li {
   display: inline;
   margin: 0 5px;
   list-style-type: none;
+}
+header li .button {
+  color: #666;
+  border: none;
 }
 nav {
   text-align: center;
