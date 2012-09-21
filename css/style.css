@@ -176,6 +176,7 @@ footer p {
   font-weight: bold;
   font-family: 'Rokkitt', serif;
   font-size: 2em;
+  vertical-align: middle;
 }
 .footer-logos img {
   display: inline-block;
