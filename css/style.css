@@ -154,6 +154,7 @@ footer a {
   color: #666;
 }
 footer p {
+  margin-bottom: 0;
   color: #666;
   text-shadow: 0 1px 0 #eee;
   font-size: 1.1em;
