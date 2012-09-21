@@ -4,46 +4,74 @@
 body {
   background-image: url("../images/striped_lens.png");
 }
-.httf-color {
-  color: #4BDFFF;
+.container {
+  margin-top: 200px;
 }
-.button {
-  /*background: #4BDFFF;*/
-  background: #fff;
+.container p {
+  font-size: 1.2em;
+  text-shadow: 0 1px 0 #fff;
 }
-.top-bar {
-  background: #ccc;
-}
+
 
 /* ------------------------------
   HEADER
 ------------------------------ */
-header h1 {
-  text-align: center;
-  margin-top: 100px;
-  font-family: 'Rokkitt', serif;
-  font-size: 5em;
-}
-header li {
-  display: inline;
-  margin: 0 5px;
-  list-style-type: none;
-}
-header li .button {
-  color: #666;
-  border: none;
-}
 nav {
   text-align: center;
 }
 .top-bar {
   position: fixed;
   top: 0;
+  height: auto;
+  background: #ccc;
   z-index: 100;
+  -webkit-box-shadow:  0px 1px 10px 1px #666;      
+  box-shadow:  0px 1px 10px 1px #666;
 }
 .top-bar ul {
   display: inline-block;
+  margin-bottom: 0;
 }
+.top-bar ul > li:hover, .top-bar ul > li.active {
+  background: none;
+}
+.top-bar ul > li:hover a, .top-bar ul > li.active a {
+  color: #fff;
+}
+header h1 {
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 0;
+  font-family: 'Rokkitt', serif;
+  font-size: 5em;
+  text-shadow: 0 1px 0 #fff;
+}
+header h1 a,
+header h1 a:hover {
+  color: #222;
+}
+header li {
+  display: inline;
+  margin: 0 5px;
+  list-style-type: none;
+}
+header li:hover {
+  color: #fff !important;
+}
+header li a.button {
+  color: #fff;
+  background: #00B7E0;
+  text-shadow: 0 -1px 0 #0085A3;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+header li a.button:hover {
+  background-color: #00C8F5;
+  color: #fff;
+}
+
+
 /* ------------------------------
   EVENTS
 ------------------------------ */
@@ -79,9 +107,11 @@ nav {
   padding-bottom: 3em;
   padding-right: 0.3em;
 }
+
+
 /* -----------------------
-   Groups
-   ---------------------- */
+  GROUPS
+----------------------- */
 #groups {
   left: 25%;
   position: absolute; 
@@ -93,3 +123,68 @@ nav {
   float: left;
   padding: 0.3em;
 }
+
+
+/* ------------------------------
+  FOOTER
+------------------------------ */
+footer {
+  margin-top: 100px;
+  padding: 30px;
+  background: #ccc;
+  text-align: center;
+  -webkit-box-shadow:  0px -1px 10px 1px #666;      
+  box-shadow:  0px -1px 10px 1px #666;
+  font-family: 'Rokkitt', serif;
+}
+footer ul {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+footer li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #666;
+  text-shadow: 0 1px 0 #eee;
+}
+footer a {
+  color: #666;
+}
+footer p {
+  color: #666;
+  text-shadow: 0 1px 0 #eee;
+  font-size: 1.1em;
+  font-family: 'Rokkitt', serif;
+}
+.footer-logos {
+  margin: 0 auto 25px;
+  width: 526px;
+  padding: 20px;
+  background: #fff;
+  -webkit-box-shadow: inset 1px 1px 1px 1px #aaa;
+  box-shadow: inset 1px 1px 1px 1px #aaa;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.footer-logos p {
+  display: inline-block;
+  color: #ccc;
+  font-weight: bold;
+  font-family: 'Rokkitt', serif;
+  font-size: 2em;
+}
+.footer-logos img {
+  display: inline-block;
+  margin: 10px 0 10px 10px;
+  vertical-align: middle;
+}
+img.logo-ploonky {
+  height: 75px;
+}
+img.logo-320ny {
+  height: 50px;
+}
+
