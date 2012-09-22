@@ -16,6 +16,7 @@ body {
   display: table;
   clear: both;
 }
+$color: red;
 
 
 /* ------------------------------
@@ -50,6 +51,7 @@ header h1 {
   font-family: 'Rokkitt', serif;
   font-size: 5em;
   text-shadow: 0 1px 0 #fff;
+  color: $color;
 }
 header h1 a,
 header h1 a:hover {
@@ -117,6 +119,7 @@ header li a.button:hover {
 /* -----------------------
   GROUPS
 ----------------------- */
+
 /*
 .groups {
   left: 25%;
@@ -125,9 +128,6 @@ header li a.button:hover {
   width: 50%;
 }
 */
-.groups-member {
-  margin-bottom: 30px;
-}
 .groups-member h2 {
   font-family: 'Rokkitt', serif;
 }
@@ -137,11 +137,12 @@ header li a.button:hover {
   margin-right: 10px;
   padding: 10px;
   background: #fff;
-  border: 2px solid #00C8F5;
+  border: 3px solid #00C8F5;
   border-radius: 4px;
   -webkit-border-radius;
 }
 .groups-member p {
+  width: 70%;
   margin: 0;
   padding: 0;
 }
@@ -214,3 +215,4 @@ img.logo-ploonky {
 img.logo-320ny {
   height: 50px;
 }
+
