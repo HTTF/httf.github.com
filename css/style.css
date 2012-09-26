@@ -77,9 +77,37 @@ header li a.button:hover {
 }
 
 
+/* -----------------------
+  GROUPS
+----------------------- */
+.groups-member {
+  margin-bottom: 30px;
+}
+.groups-member h2 {
+  font-family: 'Rokkitt', serif;
+  border-bottom: 2px solid #00C8F5;  
+}
+.groups-member a {
+  float: left;
+  width: 30%;
+  margin-right: 10px;
+  padding: 10px;
+  background: #fff;
+  -webkit-box-shadow: inset 1px 1px 1px 1px #aaa;
+  box-shadow: inset 1px 1px 1px 1px #aaa;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.groups-member p {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* ------------------------------
   EVENTS
 ------------------------------ */
+/*
 #calendar {
   left: 25%;
   position: absolute; 
@@ -112,37 +140,117 @@ header li a.button:hover {
   padding-bottom: 3em;
   padding-right: 0.3em;
 }
-
-
-/* -----------------------
-  GROUPS
------------------------ */
-/*
-.groups {
-  left: 25%;
-  position: absolute; 
-  top: 30%;
-  width: 50%;
-}
 */
-.groups-member {
-  margin-bottom: 30px;
-}
-.groups-member h2 {
+
+
+#calendar .event_title a {
   font-family: 'Rokkitt', serif;
-  border-bottom: 2px solid #00C8F5;  
+  border-bottom: 2px solid #00C8F5;
+  font-size: 2.5em;
+  color: #222;
+  font-weight: bold;
 }
-.groups-member a {
-  float: left;
-  width: 30%;
-  margin-right: 10px;
-  padding-right: 10px;
+.event_line {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
 }
-.groups-member p {
-  margin: 0;
-  padding: 0;
+.event_list,
+.meta_list {
+  width: 70%;
+  padding-left: 20px;
+  border-left: 1px dashed #ccc;
+  margin-top: 10px;
+}
+.event_list {
+  margin-top: 0;
+}
+.event_list li {
+  font-size: 1.2em;
+  text-shadow: 0 1px 0 #fff;
+  list-style-type: none;
+}
+.event-info-item {
+  color: #888;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.dateTime,
+.RSVP,
+.fee {
+  font-size: 1.2em;
+  list-style-type: none;
+}
+.RSVP a {
+  color: #222;
 }
 
+
+/* ------------------------------
+  WORK WITH
+------------------------------ */
+.work-with {
+  text-align: center;
+}
+.work-with li {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin: 0 10px;
+  text-align: center;
+  list-style-type: none;
+  background: #fff url("images/noise.png");
+  -webkit-box-shadow: inset 1px 1px 1px 1px #aaa;
+  box-shadow: inset 1px 1px 1px 1px #aaa;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+}
+.work-with a:hover li {
+  background-color: #00B7E0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.work-with a:hover h3 {
+  color: #fff;
+  text-shadow: 0 -1px 0 #0085A3;
+}
+.work-with h3 {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: 'Rokkitt', serif;
+}
+.work-with img {
+  display: inline-block;
+  margin-top: 30px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+.work-with-headers {
+  margin-top: 200px;
+}
+.work-with-headers span {
+  display: block;
+  border-top: 3px dashed #ccc;
+}
+.work-with-headers h1 {
+  position: relative;
+  font-size: 4.5em;
+  top: -39px;
+  width: 33%;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  color: #999;
+  font-family: 'Rokkitt', serif;
+  background-image: url("../images/striped_lens.png");
+  text-shadow: 0 1px 0 #fff;
+}
+.work-with-headers.two-lines h1 {
+    top: -74px;
+}
 
 
 /* ------------------------------

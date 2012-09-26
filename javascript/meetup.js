@@ -60,15 +60,15 @@ function renderCal() {
     text += '<div class="event_meta">';
     text += '  <ul class="meta_list">';
     text += '    <li class="dateTime">';
-    text += '      <span class="date">' + dayOfWeek[event_date.getDay()] + ' ' + monOfYear[event_date.getMonth()] + ' ' + event_date.getDate() + '</span><br>';
+    text += '      <span class="date"><span class="event-info-item">Date:</span> ' + dayOfWeek[event_date.getDay()] + ' ' + monOfYear[event_date.getMonth()] + ' ' + event_date.getDate() + '</span>';
     text += '      <span class="time">' + hourOfDay[0] + ':'+ getMinOfHour(event_date) + ' ' + hourOfDay[1] + '</span>';
     text += '    </li>';
     text += '    <li class="RSVP">';
-    text += '      <a href="' + val.event_url + '">' + val.yes_rsvp_count + formatRSVPLim(val.rsvp_limit) + ' attending </a>';
+    text += '      <span class="event-info-item">Attending:</span> <a href="' + val.event_url + '">' + val.yes_rsvp_count + formatRSVPLim(val.rsvp_limit) + '</a>';
     text += '    </li>'
     if (val.fee!=undefined){
       text += '    <li class="fee">';
-      text += '      <span>Price:</span><br>';
+      text += '      <span class="event-info-item">Price:</span>';
       text += '      <span>$'+val.fee.amount+'</span>';
       text += '    </li>'
     }
@@ -79,17 +79,17 @@ function renderCal() {
     if (val.venue!=undefined){
       var addr = formatAddress(val.venue.address_1, val.venue.city, val.venue.state);
       text += '    <li class="group_name">';
-      text += '      <a href="' + val.event_url + '">' + val.venue.name +'</a>';
+      text += '      <span class="event-info-item">Organizer:</span> <a href="' + val.event_url + '">' + val.venue.name +'</a>';
       text += '    </li>';
       text += '    <li class="group_address">';
-      text += '      <span>'+ addr +'<a href="http://maps.google.com/maps?q='+addr.replace(/ /g,"+")+'">map</a></span>'; 
+      text += '      <span><span class="event-info-item">Location:</span> '+ addr +'<a href="http://maps.google.com/maps?q='+addr.replace(/ /g,"+")+'">map</a></span>'; 
       text += '    </li>';
     }
-    text += '    <li class="group_desc">';
+    text += '    <li class="group_desc"><span class="event-info-item">About:</span> ';
     text += strip(val.description).substring(0,300)+ '...'; 
     text += '    </li>';     
     text += '    <li class="group_host">';
-    text += '      <span>Hosted by: '+val.event_hosts[0].member_name+'</span>';
+    text += '      <span><span class="event-info-item">Host:</span> '+val.event_hosts[0].member_name+'</span>';
     text += '    </li>';
     text += '  </ul>';
   });
