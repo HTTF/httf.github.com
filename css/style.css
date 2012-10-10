@@ -176,6 +176,8 @@ header li a.button:hover {
   font-size: 1.3em;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 0 1px 0 #fff;
+
 }
 .dateTime,
 .RSVP,
