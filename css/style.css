@@ -16,6 +16,16 @@ body {
   display: table;
   clear: both;
 }
+.five, .row .five {
+  width: 431px !important;
+}
+.row .offset-by-one {
+  margin-left: 78px !important;
+}
+.row .row {
+  width: 940px;
+  margin: 0
+}
 
 
 /* ------------------------------
@@ -27,7 +37,7 @@ nav {
 .top-bar {
   position: fixed;
   top: 0;
-  height: auto;
+  height: 149px;
   background: #ccc;
   z-index: 100;
   -webkit-box-shadow:  0px 1px 10px 1px #666;      
@@ -36,6 +46,8 @@ nav {
 .top-bar ul {
   display: inline-block;
   margin-bottom: 0;
+  line-height: 1px;
+  width: 530px;
 }
 .top-bar ul > li:hover, .top-bar ul > li.active {
   background: none;
@@ -78,10 +90,28 @@ header li a.button:hover {
 
 
 /* -----------------------
+  HOME
+----------------------- */
+.home-images img {
+  max-width: 281px;
+}
+
+
+/* -----------------------
   GROUPS
 ----------------------- */
+.groups {
+  margin: 0 auto !important;
+}
 .groups-member {
+  width: 391px;
   margin-bottom: 30px;
+}
+.groups-member:nth-child(odd) {
+  float: left !important;
+}
+.groups-member:nth-child(even) {
+  float: right !important;
 }
 .groups-member h2 {
   font-family: 'Rokkitt', serif;
@@ -89,7 +119,7 @@ header li a.button:hover {
 }
 .groups-member a {
   float: left;
-  width: 30%;
+  width: 108px;
   margin-right: 10px;
   padding: 10px;
   background: #fff;
@@ -107,42 +137,6 @@ header li a.button:hover {
 /* ------------------------------
   EVENTS
 ------------------------------ */
-/*
-#calendar {
-  left: 25%;
-  position: absolute; 
-  top: 20%;
-  width: 50%;
-}
-#calendar ul {
-  list-style: none outside none;
-  padding: 0em;
-}
-#calendar li {
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-}
-#calendar .event_title {
-  width: 100%;
-  float: right;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  border-bottom: 1px dotted #A4A4A4;
-}
-#calendar .event_meta {
-  width: 24%;
-  float: right;
-}
-#calendar .event_content {
-  width: 75%;
-  float: left;
-  border-right: 1px dotted #A4A4A4;
-  padding-bottom: 3em;
-  padding-right: 0.3em;
-}
-*/
-
-
 #calendar .event_title a {
   font-family: 'Rokkitt', serif;
   border-bottom: 2px solid #00C8F5;
@@ -195,6 +189,8 @@ header li a.button:hover {
 ------------------------------ */
 .work-with {
   text-align: center;
+  width: 675px !important;
+  margin: 0 auto;
 }
 .work-with li {
   display: inline-block;
@@ -318,4 +314,65 @@ img.logo-ploonky {
 }
 img.logo-320ny {
   height: 50px;
+}
+
+
+/* ------------------------------
+  MEDIA QUERIES
+------------------------------ */
+@media only screen and (max-width: 940px) {
+  .container {
+    min-width: 940px;
+    margin-top: 50px;
+  }
+  .top-bar {
+    width: 940px;
+    position: static;
+  }
+  .top-bar ul li {
+    float: left;
+  }
+  body .column,
+  body .columns {
+    /*
+    width: 940px !important;
+    min-width: 940px !important;
+    float: left !important;
+    */
+  }
+  body .row {
+    width: 940px !important;
+    min-width: 940px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    width: 940px;
+  }
+  .work-with-headers span {
+    width: 940px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body .column,
+  body .columns {
+    /*
+    width: 940px !important;
+    min-width: 940px !important;
+    */
+    float: left !important;
+  }
+  body .row {
+    width: 940px !important;
+    min-width: 940px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    width: 940px;
+  }
+  .five, .row .five {
+    width: 391px !important;
+  }
 }
