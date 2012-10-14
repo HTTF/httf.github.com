@@ -24,7 +24,7 @@ body {
 }
 .row .row {
   width: 940px;
-  margin: 0
+  margin: 0 auto;
 }
 
 
@@ -187,6 +187,9 @@ header li a.button:hover {
 /* ------------------------------
   WORK WITH
 ------------------------------ */
+.work-with-wrapper .columns {
+  padding: 0;
+}
 .work-with {
   text-align: center;
   width: 675px !important;
@@ -228,8 +231,10 @@ header li a.button:hover {
 }
 .work-with-headers {
   margin-top: 200px;
+  padding: 0;
 }
 .work-with-headers span {
+  width: 900px;
   display: block;
   border-top: 3px dashed #ccc;
 }
@@ -237,7 +242,7 @@ header li a.button:hover {
   position: relative;
   font-size: 4.5em;
   top: -39px;
-  width: 33%;
+  width: 300px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
@@ -347,9 +352,6 @@ img.logo-320ny {
     margin-right: auto;
   }
   footer {
-    width: 940px;
-  }
-  .work-with-headers span {
     width: 940px;
   }
 }
