@@ -293,7 +293,7 @@ footer p {
 }
 .footer-logos {
   margin: 0 auto 25px;
-  width: 564px;
+  width: 275px;
   background: #fff;
   -webkit-box-shadow: inset 1px 1px 1px 1px #aaa;
   box-shadow: inset 1px 1px 1px 1px #aaa;
@@ -306,7 +306,7 @@ footer p {
   color: #ccc;
   font-weight: bold;
   font-family: 'Rokkitt', serif;
-  font-size: 2em;
+  font-size: 1.5em;
   vertical-align: middle;
 }
 .footer-logos img {
