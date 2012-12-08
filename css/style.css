@@ -47,7 +47,7 @@ nav {
   display: inline-block;
   margin-bottom: 0;
   line-height: 1px;
-  width: 530px;
+  width: 622px;
 }
 .top-bar ul > li:hover, .top-bar ul > li.active {
   background: none;
@@ -76,12 +76,14 @@ header li:hover {
   color: #fff !important;
 }
 header li a.button {
+  padding: 15px 20px;
   color: #fff;
   background: #00B7E0;
   text-shadow: 0 -1px 0 #0085A3;
-  border: none;
+  border: 1px solid #ddd;
   box-shadow: none;
   -webkit-box-shadow: none;
+  font-size: 1.2em;
 }
 header li a.button:hover {
   background-color: #00C8F5;
